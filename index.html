@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>responsive-form-flexbox</title>
+    <!--
+        <link rel="stylesheet" href="src/css/main.css">
+    -->
+    <link rel="stylesheet" href="src/dist/css/main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Home Office</h1>
+        <form action="/">
+            <div class="container">
+                <h4>Temos algumas perguntas que nos ajudarão a entender o que você precisa.</h4>
+                <div class="line">
+                    <span>
+                        <small for="nome">Nome</small>
+                    </span>
+                    <span>
+                        <input type="text" id="name" name="nome" placeholder="Coloque seu nome">
+                    </span>
+                </div>
+                <div class="line">
+                    <span>
+                        <small for="email">Email</small>
+                    </span>
+                    <span>
+                        <input type="text" id="email" name="email" placeholder="Coloque seu endereço de email">
+                    </span>
+                </div>
+                <div class="line">
+                    <span>
+                        <small for="health">De 1 a 10, como você se sente?</small>
+                    </span>
+                    <span>
+                        <input type="number" id="health" name="health" min="1" max="10" placeholder="Coloque um número entre 1 e 10">
+                    </span>
+                </div>
+                <div class="line">
+                    <span>
+                        <small for="workplace">Você trabalha em qual cômodo?</small>
+                    </span>
+                    <span>
+                        <select name="workplace">
+                            <option value="workplace1" selected>Quarto</option>
+                            <option value="workplace2">Cozinha</option>
+                            <option value="workplace3">Sala</option>
+                            <option value="workplace4">Quintal</option>
+                          </select>
+                    </span>
+                </div>
+                <div class="line">
+                    <span>
+                        <small>Qual seu horário mais produtivo?</small>
+                    </span>
+                    <span>
+                        <aside>
+                            <input type="radio" id="manha" name="time" value="manha" checked>
+                            <label for="manha">Manhã</label>
+                        </aside>
+                        <aside>
+                            <input type="radio" id="tarde" name="time" value="tarde">
+                            <label for="tarde">Tarde</label>
+                        </aside>
+                        <aside>
+                            <input type="radio" id="noite" name="time" value="noite">
+                            <label for="noite">Noite</label>
+                        </aside>
+                    </span>
+                </div>
+                <div class="line">
+                    <span>
+                        <small>Como está se sentindo?</small>
+                    </span>
+                    <span>
+                        <aside>
+                            <input type="checkbox" id="bem" name="bem" checked>
+                            <label for="bem">Bem</label>
+                        </aside>
+                        <aside>
+                            <input type="checkbox" id="confuso" name="confuso">
+                            <label for="confuso">Confuso</label>
+                        </aside>
+                        <aside>
+                            <input type="checkbox" id="cansado" name="cansado">
+                            <label for="cansado">Cansado</label>
+                        </aside>
+                        <aside>
+                            <input type="checkbox" id="empolgado" name="empolgado">
+                            <label for="empolgado">Empolgado</label>
+                        </aside>
+                        <aside>
+                            <input type="checkbox" id="entusiasmado" name="entusiasmado">
+                            <label for="entusiasmado">Entusiasmado</label>
+                        </aside>
+                    </span>
+                </div>
+                <div class="line">
+                    <span>
+                        <small style="text-align: right;">Descreva sua experiência com o home office</small>
+                    </span>
+                    <span>
+                        <textarea name="experience" id="experience" cols="10" rows="5" placeholder="Descreva suas experiências aqui"></textarea>
+                    </span>
+                </div>
+                <div class="line">
+                    <input type="submit" value="Enviar" id="send">
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+<script src="src/js/custom.js"></script>
+
+</html>
